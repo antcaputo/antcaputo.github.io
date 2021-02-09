@@ -47,12 +47,16 @@
 														{"label":"country","value":"IT","transcriptFields":[],"displayToAgent":true}];
 		
 		embedded_svc.settings.extraPrechatInfo = 
-        [{"entityName":"Case","showOnCreate":true, "saveToTranscript":"Case", "entityFieldMaps":
+        	[{"entityName":"Contact","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"ContactId","saveToTranscript":"Contact","entityFieldMaps":
+			[{"isExactMatch":true,"fieldName":"FirstName","doCreate":false,"doFind":true,"label":"First Name"},
+			{"isExactMatch":true,"fieldName":"LastName","doCreate":false,"doFind":true,"label":"Last Name"},
+			{"isExactMatch":true,"fieldName":"Email","doCreate":false,"doFind":true,"label":"Email"}]},
+		{"entityName":"Case","showOnCreate":true, "saveToTranscript":"Case", "entityFieldMaps":
 			[{"isExactMatch":false,"fieldName":"Subject","doCreate":true,"doFind":false,"label":"issue"},
 			{"isExactMatch":false,"fieldName":"Status","doCreate":true,"doFind":false,"label":"Status"},
 			{"isExactMatch":false,"fieldName":"Origin","doCreate":true,"doFind":false,"label":"Origin"},
 			{"isExactMatch":false,"fieldName":"Language__c","doCreate":true,"doFind":false,"label":"language"}]},
-			{"entityName":"Account","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"AccountId","saveToTranscript":"Account","entityFieldMaps": [{
+		{"entityName":"Account","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"AccountId","saveToTranscript":"Account","entityFieldMaps": [{
 				  "isExactMatch": true,
 				  "fieldName": "PersonEmail",
 				  "doCreate": false,
