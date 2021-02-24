@@ -71,9 +71,11 @@
 			"label": "country"
 			}]}];
 		
-		    embedded_svc.settings.prepopulatedPrechatFields = {
-        		Subject: 'es'
-    			};
+	    	embedded_svc.settings.prepopulatedPrechatFields = {
+			Subject: 'es'
+		};
+		
+		embedded_svc.settings.autoOpenPostChat = true;
 
 		embedded_svc.init(
 			'https://calzedoniagroup--Dev.my.salesforce.com',
@@ -90,8 +92,6 @@
 				isOfflineSupportEnabled: false
 			}
 		);
-		console.log('EMBEDDED SVC '+JSON.stringify(embedded_svc));
-		console.log('EMBEDDED SVC SETTINGS '+JSON.stringify(embedded_svc.settings));
 	};
 
 	if (!window.embedded_svc) {
