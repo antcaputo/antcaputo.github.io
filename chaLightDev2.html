@@ -62,6 +62,8 @@
          	//	[{"isExactMatch":true,"fieldName":"PersonEmail","doCreate":false,"doFind":true,"label":"Email"}]},
          	{"entityName":"Country_sf__c","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"CountrySF__c","saveToTranscript":"","entityFieldMaps": 
          		[{"isExactMatch":true,"fieldName":"Code__c","doCreate":false,"doFind":true,"label":"country"}]}];
+            
+            console.log("embedded_svc.settings.extraPrechatInfo" + JSON.stringify(embedded_svc.settings.extraPrechatInfo));
          	
              	embedded_svc.settings.prepopulatedPrechatFields = 
          		{Language: embedded_svc.settings.language};
@@ -93,6 +95,7 @@
          	s.setAttribute('src', 'https://calzedoniagroup--Dev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
          	s.onload = function() {
          		initESW(null);
+               console.log("window.embedded_svc.settings.extraPrechatInfo" + JSON.stringify(window.embedded_svc.settings.extraPrechatInfo));
          	};
          	document.body.appendChild(s);
          } else {
