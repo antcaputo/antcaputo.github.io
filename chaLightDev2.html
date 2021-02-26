@@ -57,9 +57,9 @@
                {"isExactMatch":false,"fieldName":"Email__c","doCreate":true,"doFind":false,"label":"Email"},
          		{"isExactMatch":false,"fieldName":"Language__c","doCreate":true,"doFind":false,"label":"Language"}]},
          	{"entityName":"Account","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"AccountId","saveToTranscript":"Account","entityFieldMaps": 
-         		[{"isExactMatch": true,"fieldName": "PersonEmail","doCreate": false,"doFind": true,"label": "Email"}]},
+         		[{"isExactMatch":true,"fieldName": "PersonEmail","doCreate":true,"doFind":false,"label":"Email"}]},
          	{"entityName":"Country_sf__c","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"CountrySF__c","saveToTranscript":"","entityFieldMaps": 
-         		[{"isExactMatch": true,"fieldName": "Code__c","doCreate": false,"doFind": true,"label": "country"}]}];
+         		[{"isExactMatch":true,"fieldName":"Code__c","doCreate":false,"doFind":true,"label":"country"}]}];
          	
              	embedded_svc.settings.prepopulatedPrechatFields = 
          		{Language: embedded_svc.settings.language};
