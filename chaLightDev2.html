@@ -17,7 +17,7 @@
       <script type='text/javascript'>
          var initESW = function(gslbBaseURL) {
          	embedded_svc.settings.displayHelpButton = true; //Or false
-         	embedded_svc.settings.language = 'du'; //For example, enter 'en' or 'en-US'
+         	embedded_svc.settings.language = 'en'; //For example, enter 'en' or 'en-US'
          
          	//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
          	//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -58,8 +58,8 @@
          		{"isExactMatch":false,"fieldName":"Origin","doCreate":true,"doFind":false,"label":"Origin"},
                {"isExactMatch":false,"fieldName":"Email__c","doCreate":true,"doFind":false,"label":"Email"},
          		{"isExactMatch":false,"fieldName":"Language__c","doCreate":true,"doFind":false,"label":"Language"}]},
-         	//{"entityName":"Account","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"AccountId","saveToTranscript":"","entityFieldMaps": 
-         	//	[{"isExactMatch":true,"fieldName":"PersonEmail","doCreate":false,"doFind":true,"label":"Email"}]},
+         	{"entityName":"Account","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"AccountId","saveToTranscript":"","entityFieldMaps": 
+         		[{"isExactMatch":true,"fieldName":"PersonEmail","doCreate":false,"doFind":true,"label":"Email"}]},
          	{"entityName":"Country_sf__c","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"CountrySF__c","saveToTranscript":"","entityFieldMaps": 
          		[{"isExactMatch":true,"fieldName":"Code__c","doCreate":false,"doFind":true,"label":"country"}]}];
             
