@@ -63,14 +63,13 @@
          	{"entityName":"Country_sf__c","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"CountrySF__c","saveToTranscript":"","entityFieldMaps": 
          		[{"isExactMatch":true,"fieldName":"Code__c","doCreate":false,"doFind":true,"label":"country"}]}];
             
-            console.log("embedded_svc.settings.extraPrechatInfo" + JSON.stringify(embedded_svc.settings.extraPrechatInfo));
+            console.log("PRECHAT DETAILS DENTRO INITESW " + JSON.stringify(embedded_svc.settings.extraPrechatFormDetails));
+            console.log("PRECHAT INFO DENTRO INITESW " + JSON.stringify(embedded_svc.settings.extraPrechatInfo));
          	
              	embedded_svc.settings.prepopulatedPrechatFields = 
          		{Language: embedded_svc.settings.language};
          	
          	embedded_svc.settings.autoOpenPostChat = true;
-         	
-            console.dir(window);
             
          	embedded_svc.init(
          		'https://calzedoniagroup--Dev.my.salesforce.com',
@@ -96,7 +95,8 @@
          	s.setAttribute('src', 'https://calzedoniagroup--Dev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
          	s.onload = function() {
          		initESW(null);
-               console.log("window.embedded_svc.settings.extraPrechatInfo" + JSON.stringify(window.embedded_svc.settings.extraPrechatInfo));
+               console.log("PRECHAT DETAILS DOPO INITESW " + JSON.stringify(embedded_svc.settings.extraPrechatFormDetails));
+               console.log("PRECHAT INFO DOPO INITESW " + JSON.stringify(embedded_svc.settings.extraPrechatInfo));
          	};
          	document.body.appendChild(s);
          } else {
