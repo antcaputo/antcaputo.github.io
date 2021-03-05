@@ -47,6 +47,11 @@
 				"en": "First Name",
 				"es": "Nombre"
 			}
+		
+		var subjectLabelMap = {
+				"en": "Subject",
+				"es": "Asunto"
+			}
 			
 			// Codice Country per trovare la Country
          	var country = "IT";
@@ -70,7 +75,7 @@
          		{"isExactMatch":false,"fieldName":"Origin","doCreate":true,"doFind":false,"label":"Origin"},
                 	{"isExactMatch":false,"fieldName":"Email__c","doCreate":true,"doFind":false,"label":emailLabelMap[embedded_svc.settings.language]},
          		{"isExactMatch":false,"fieldName":"Language__c","doCreate":true,"doFind":false,"label":"Language"},
-			{"isExactMatch":false,"fieldName":"Subject","doCreate":true,"doFind":false,"label":firstNameLabelMap[embedded_svc.settings.language]}]},
+			{"isExactMatch":false,"fieldName":"Subject","doCreate":true,"doFind":false,"label":subjectLabelMap[embedded_svc.settings.language]}]},
          	{"entityName":"Account","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"AccountId","saveToTranscript":"","entityFieldMaps": 
          		[{"isExactMatch":true,"fieldName":"PersonEmail","doCreate":false,"doFind":true,"label":emailLabelMap[embedded_svc.settings.language]}]},
          	{"entityName":"Country_sf__c","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"CountrySF__c","saveToTranscript":"","entityFieldMaps": 
