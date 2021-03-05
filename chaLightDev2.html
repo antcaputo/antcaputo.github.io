@@ -48,6 +48,11 @@
 				"es": "Nombre"
 			}
 		
+		var lastNameLabelMap = {
+				"en": "Last Name",
+				"es": "Apellidos"
+			}
+		
 		var subjectLabelMap = {
 				"en": "Subject",
 				"es": "Asunto"
@@ -76,8 +81,8 @@
 			// Campi scritti nel Case all'apertura della chat
          	embedded_svc.settings.extraPrechatInfo = 
                [{"entityName":"Contact","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"ContactId","saveToTranscript":"Contact","entityFieldMaps":
-         		[{"isExactMatch":false,"fieldName":"FirstName","doCreate":false,"doFind":false,"label":"First Name"},
-         		{"isExactMatch":false,"fieldName":"LastName","doCreate":false,"doFind":false,"label":"Last Name"},
+         		[{"isExactMatch":false,"fieldName":"FirstName","doCreate":false,"doFind":false,"label":firstNameLabelMap[embedded_svc.settings.language]},
+         		{"isExactMatch":false,"fieldName":"LastName","doCreate":false,"doFind":false,"label":lastNameLabelMap[embedded_svc.settings.language]},
 			{"isExactMatch":true,"fieldName":"Email","doCreate":false,"doFind":true,"label":emailLabelMap[embedded_svc.settings.language]}]},
 		{"entityName":"Case","showOnCreate":true, "saveToTranscript":"Case", "entityFieldMaps":
          		[{"isExactMatch":false,"fieldName":"Subject","doCreate":true,"doFind":false,"label":"issue"},
