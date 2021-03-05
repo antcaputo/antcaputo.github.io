@@ -48,10 +48,11 @@
          	
 			// Campi prepopolati all'apertura della prechat
          	embedded_svc.settings.extraPrechatFormDetails = [
-         													{"label":"issue","value":"","transcriptFields":[],"displayToAgent":true},
-         													{"label":"language","value":embedded_svc.settings.language,"transcriptFields":[],"displayToAgent":true},
-															{"label":"Language","value":embedded_svc.settings.language,"transcriptFields":[],"displayToAgent":true},
-         													{"label":"country","value":country,"transcriptFields":[],"displayToAgent":true}];
+         			{"label":"issue","value":"","transcriptFields":[],"displayToAgent":true},
+         			{"label":"language","value":embedded_svc.settings.language,"transcriptFields":[],"displayToAgent":true},
+				{"label":"Language","value":embedded_svc.settings.language,"transcriptFields":[],"displayToAgent":true},
+         			{"label":"country","value":country,"transcriptFields":[],"displayToAgent":true}];
+		 
          	
 			// Campi scritti nel Case all'apertura della chat
          	embedded_svc.settings.extraPrechatInfo = 
@@ -61,8 +62,9 @@
          		[{"isExactMatch":false,"fieldName":"Subject","doCreate":true,"doFind":false,"label":"issue"},
          		{"isExactMatch":false,"fieldName":"Status","doCreate":true,"doFind":false,"label":"Status"},
          		{"isExactMatch":false,"fieldName":"Origin","doCreate":true,"doFind":false,"label":"Origin"},
-               {"isExactMatch":false,"fieldName":"Email__c","doCreate":true,"doFind":false,"label":emailLabelMap[embedded_svc.settings.language]},
-         		{"isExactMatch":false,"fieldName":"Language__c","doCreate":true,"doFind":false,"label":"Language"}]},
+                	{"isExactMatch":false,"fieldName":"Email__c","doCreate":true,"doFind":false,"label":emailLabelMap[embedded_svc.settings.language]},
+         		{"isExactMatch":false,"fieldName":"Language__c","doCreate":true,"doFind":false,"label":"Language"},
+			{"isExactMatch":false,"fieldName":"Subject","doCreate":true,"doFind":false,"label":"First Name"}]},
          	{"entityName":"Account","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"AccountId","saveToTranscript":"","entityFieldMaps": 
          		[{"isExactMatch":true,"fieldName":"PersonEmail","doCreate":false,"doFind":true,"label":emailLabelMap[embedded_svc.settings.language]}]},
          	{"entityName":"Country_sf__c","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"CountrySF__c","saveToTranscript":"","entityFieldMaps": 
