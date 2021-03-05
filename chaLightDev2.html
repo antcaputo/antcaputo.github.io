@@ -78,7 +78,8 @@
          	
 			// Campi prepopolati all'apertura della chat
              	embedded_svc.settings.prepopulatedPrechatFields = 
-         		{Language: embedded_svc.settings.language};
+         		{Language: embedded_svc.settings.language,
+			 Subject: "Incoming Chat From: "};
          	
 			// Apri la post chat senza chiedere all'utente
          	embedded_svc.settings.autoOpenPostChat = true;
