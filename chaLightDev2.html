@@ -75,9 +75,7 @@
          	
 			// Campi scritti nel Case all'apertura della chat
          	embedded_svc.settings.extraPrechatInfo = 
-               [{"entityName":"Contact","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"ContactId","saveToTranscript":"","entityFieldMaps":
-         		[{"isExactMatch":true,"fieldName":"Email","doCreate":true,"doFind":false,"label":emailLabelMap[embedded_svc.settings.language]}]},
-         	{"entityName":"Case","showOnCreate":true, "saveToTranscript":"Case", "entityFieldMaps":
+               [{"entityName":"Case","showOnCreate":true, "saveToTranscript":"Case", "entityFieldMaps":
          		[{"isExactMatch":false,"fieldName":"Subject","doCreate":true,"doFind":false,"label":"issue"},
          		{"isExactMatch":false,"fieldName":"Status","doCreate":true,"doFind":false,"label":"Status"},
                 	{"isExactMatch":false,"fieldName":"Email__c","doCreate":true,"doFind":false,"label":emailLabelMap[embedded_svc.settings.language]},
