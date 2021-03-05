@@ -85,6 +85,9 @@
          		[{"isExactMatch":true,"fieldName":"Code__c","doCreate":false,"doFind":true,"label":"country"}]},
 	        {"entityName":"Brand__c","showOnCreate":true,"linkToEntityName":"Case","linkToEntityField":"BrandSF__c","saveToTranscript":"","entityFieldMaps": 
          		[{"isExactMatch":true,"fieldName":"Code__c","doCreate":false,"doFind":true,"label":"brand"}]}];
+		 
+		 console.log('DETAILS '+JSON.stringify(embedded_svc.settings.extraPrechatFormDetails, null, 1));
+		 console.log('INFO '+JSON.stringify(embedded_svc.settings.extraPrechatInfo, null, 1));
          	
 			// Campi prepopolati all'apertura della chat
              	embedded_svc.settings.prepopulatedPrechatFields = 
